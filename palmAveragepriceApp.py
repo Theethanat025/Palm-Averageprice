@@ -7,6 +7,18 @@ from sklearn.metrics import r2_score
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
+# CSS สำหรับเปลี่ยนสีพื้นหลัง
+page_bg_img = '''
+<style>
+body {
+    background-color: #f5f5f5;
+}
+</style>
+'''
+
+# แทรก CSS ไปยังแอป Streamlit
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # 1. การเตรียมข้อมูล
 data = pd.read_csv('palm averageprice 2017_2023.csv')
 
